@@ -1,0 +1,89 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Conectarse a la base de datos mipcgamer y verificar los componentes",
+        "description": "",
+        "id": "mongodb;conectarse-a-la-base-de-datos-mipcgamer-y-verificar-los-componentes;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Me he conectado a la base de datos mipcgamer",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Obtengo la PC de QA Automation",
+            "match": {
+              "location": "test.obtengoLaPCDeQAAutomation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Debo obtener los siguientes componentes \"Gigabyte Aorus elite bise\" \"Ryzen 5 3600 4.2 GHZ\" \"HyperX Fury 00R4 8GB\" \"HyperX Fury 00R4 8GB\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gigabyte Aorus elite bise",
+                  "offset": 41
+                },
+                {
+                  "val": "Ryzen 5 3600 4.2 GHZ",
+                  "offset": 69
+                },
+                {
+                  "val": "HyperX Fury 00R4 8GB",
+                  "offset": 92
+                },
+                {
+                  "val": "HyperX Fury 00R4 8GB",
+                  "offset": 115
+                }
+              ],
+              "location": "test.deboObtenerLosSiguientesComponentes(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@funcional"
+          }
+        ]
+      }
+    ],
+    "name": "MongoDB",
+    "description": "Como QA Automation Engenier quiero acceder a la base de datos Mongo para verificar el Backend de la aplicacion",
+    "id": "mongodb",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/db.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@funcional"
+      }
+    ]
+  }
+]

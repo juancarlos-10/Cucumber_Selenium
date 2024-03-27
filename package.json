@@ -1,0 +1,33 @@
+{
+  "name": "cucumber_selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "define-lazy-prop": "^2.0.0",
+    "find": "^0.3.0",
+    "fs-extra": "^11.2.0",
+    "graceful-fs": "^4.2.11",
+    "is-docker": "^2.2.1",
+    "is-wsl": "^2.2.0",
+    "jsonfile": "^6.1.0",
+    "lodash": "^4.17.21",
+    "luxon": "^3.4.4",
+    "open": "^8.4.2",
+    "traverse-chain": "^0.1.0",
+    "universalify": "^2.0.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "report": "node index.js"
+  },
+  "author": "Juan Carlos Arones",
+  "license": "ISC"
+}
